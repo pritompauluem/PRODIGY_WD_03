@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tic Tac Toe</h1>
+      <div class="game-mode">
+        <button id="ai-mode">Play with AI</button>
+        <button id="friend-mode">Play with Friend</button>
+      </div>
+      <div id="opponent-info">
+        You are playing against: <span id="opponent">AI</span>
+      </div>
+      <div class="game-board">
+        <table>
+          <tr>
+            <td class="cell" id="0"></td>
+            <td class="cell" id="1"></td>
+            <td class="cell" id="2"></td>
+          </tr>
+          <tr>
+            <td class="cell" id="3"></td>
+            <td class="cell" id="4"></td>
+            <td class="cell" id="5"></td>
+          </tr>
+          <tr>
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="endgame">
+        <div class="text"></div>
+        <div id="countdown"></div>
+        <button id="cancel-restart">Cancel Restart</button>
+      </div>
+      <button id="replay">Replay</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
